@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:rgb(190, 190, 236);
+}
+nav{
+    background-color:rgb(82, 29, 82);
+    color:rgb(211, 211, 37);
+    font-size:30px;
+    height:45px;
+    padding-left:20px;
+    line-height: 40px;
+    display:flex;
+   
+    align-items: center;
+    font-family: 'Changa', sans-serif;
+
+}
+nav ul{
+    list-style-type:none;
+ 
+}
+.gameContainer{
+    background-color:rgb(190, 190, 236);
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Indie Flower', cursive;
+}
+.box{
+    border:3px solid rgb(10, 10, 95);
+    font-size: 7vw;
+    cursor:pointer;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.info{
+    font-size: 35px;
+}
+
+.box:hover{
+    background-color:rgb(174, 174, 255);
+}
+.gameInfo{
+    font-family: 'Sansita', sans-serif;
+    padding: 0 60px;
+}
+.imgbox img{
+    width : 0;
+    transition : width 1s ease-in-out;
+}
+.br-0{
+    border-right:0;
+}
+.bl-0{
+    border-left:0;
+}
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom:0;
+}
+#reset{
+ 
+
+    background-color: rgb(211 211 37);
+    color: rgb(82 29 82);
+    font-family: 'Changa', sans-serif;
+    font-weight: 300px;
+    padding: 13px 29px 13px 29px;
+    margin: 80px 12px 30px 10px;
+    border-radius: 19px;
+    font-size: 38px;
+    cursor: pointer;
+    border: solid rgb(82 29 82);
+    display: flex;
+}
+
+@media screen and (max-width: 800px){
+    .gameContainer{
+       flex-wrap : 90%
+
+    }
+}
+.line{
+    background-color: #d3d325;
+    width: 0;
+    height: 7px;
+    position : absolute;
+    border-radius : 20px;
+    transition : width 0.5s ease-in;
+}

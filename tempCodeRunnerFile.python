@@ -1,0 +1,12 @@
+x={'key1':32, 'key2': 33}
+for key,value in x.items(): 
+    print(key,value)
+print(x)
+for key in x:
+    print(key, x[key])
+# print(x['key3'])
+print(x.get('key3'))
+a=20
+sex="woman"
+name="Ritul"
+print(f"Hello, I am {name}. I am a {a} years old {sex}.")
